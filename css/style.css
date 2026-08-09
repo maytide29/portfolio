@@ -1,0 +1,1808 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  word-break: keep-all;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@font-face {
+  font-family: "AliceDigitalLearning";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AliceDigitalLearning";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+section {
+  height: 100vh;
+}
+.navi {
+  font-family: "Pacifico", cursive;
+  position: fixed;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  text-align: center;
+  font-size: clamp(0.9rem, 1rem, 1.1rem);
+}
+.navi .berry {
+  width: 40px;
+}
+.navi li {
+  margin-bottom: -10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 43px;
+}
+.navi:hover li {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 43px;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.4s;
+}
+.navi:hover li span {
+  display: block;
+}
+.navi li span {
+  display: none;
+  height: 43px;
+  line-height: 43px;
+}
+.navi li.on {
+  box-shadow: 0 0 0 3px rebeccapurple;
+  border-radius: 8px;
+}
+
+.menu_home {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.menu_profile {
+  background-image: url(../imges/menu_profile.png);
+}
+.menu_logo {
+  background-image: url(../imges/menu_contact.png);
+  color: #fff;
+}
+.menu_design {
+  background-image: url(../imges/menu_design.png);
+}
+.menu_clone {
+  background-image: url(../imges/menu_clone.png);
+  color: #fff;
+}
+.menu_illust {
+  background-image: url(../imges/menu_illust.png);
+}
+.menu_contact {
+  background-image: url(../imges/menu_contact.png);
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+  background: url(../imges/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.video {
+  width: 500px;
+}
+
+/*=====================*/
+.pdf-modal {
+  display: none;
+
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-modal-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.pdf-modal-content {
+  position: relative;
+  z-index: 1;
+
+  width: 80%;
+  height: 90%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pdf-modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.pdf-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+
+  width: 40px;
+  height: 40px;
+
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+.home .page {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 1;
+  -webkit-text-stroke: #000;
+  align-items: start;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+.home .page {
+  animation: blinkColor 1.7s infinite ease-in-out;
+}
+
+@keyframes blinkColor {
+  0%,
+  100% {
+    color: #a0302e;
+    opacity: 1;
+  }
+  50% {
+    color: #000;
+    opacity: 1;
+  }
+}
+/* ======================= */
+
+@media (min-width: 1024px) {
+  .home h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: lighter;
+    font-size: clamp(3rem, 6vw, 6.5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+    padding-top: clamp(1rem, 2vw, 2rem);
+    padding-bottom: clamp(0.5rem, 1vw, 1rem);
+  }
+  .home h2 {
+    font-family: "AliceDigitalLearning";
+    color: #fff;
+    text-shadow:
+      -2px -2px 0 #604c77,
+      2px -2px 0 #604c77,
+      -2px 2px 0 #604c77,
+      2px 2px 0 #604c77;
+    font-size: clamp(2.2rem, 2vw, 4rem);
+    padding-left: clamp(20px, 2vw, 30px);
+    padding-right: clamp(20px, 2vw, 30px);
+    /* padding-bottom: 1rem; */
+  }
+  .home p {
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(0.5rem, 1vw, 1rem);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
+  }
+  .home .page {
+    color: #a0302e;
+    width: 550px;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+  }
+
+  .cake {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+  .cake:hover {
+    transform: translateX(-50%) scale(1.025);
+    transition: ease-in-out 0.3s;
+  }
+
+  h3 {
+    font-family: "Pacifico", cursive;
+    font-size: clamp(3rem, 4vw, 5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+  }
+  .profile .over {
+    display: flex;
+    /* gap: 400px; */
+    gap: clamp(50px, 10vw, 400px);
+    /* padding: 70px 100px 30px; */
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(50px, 3vw, 70px);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(90px, 4vw, 100px);
+    align-items: center;
+  }
+  .profile .over p {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.4rem, 1.1vw, 2.5rem);
+    text-align: left;
+  }
+  .profile .under {
+    display: flex;
+    /* padding: 0px 150px; */
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(140px, 7vw, 170px);
+    /* gap: 100px; */
+    gap: clamp(50px, 5vw, 80px);
+  }
+  .profile .under .left {
+    width: 30%;
+  }
+  .profile .under .left img {
+    width: 100%;
+  }
+  .profile .under .left p {
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.3vw, 2.7rem);
+    font-family: "AliceDigitalLearning";
+    padding: 5px;
+  }
+  .profile .under .right {
+    display: flex;
+    gap: clamp(30px, 3vw, 50px);
+  }
+  .profile .under .right .content {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.5rem, 1.3vw, 2.7rem);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+  }
+  .profile .under .right span {
+    font-size: clamp(1rem, 1vw, 1.4rem);
+    font-weight: lighter;
+  }
+  .profile .under .right p {
+    font-size: clamp(1.1rem, 1.1vw, 1.7rem);
+    font-weight: lighter;
+  }
+  .profile .tool {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+  }
+  .profile .tool li {
+    /* width: calc((100% - 180px) / 10); */
+    flex: 0 0 30px;
+  }
+  .profile .tool img {
+    width: 100%;
+    display: block;
+  }
+
+  .logo h3 {
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(20px, 1vw, 30px);
+  }
+  .logo > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "AliceDigitalLearning";
+    padding-right: clamp(120px, 6vw, 150px);
+  }
+  .logo .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .logo .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+  }
+  .logo.on .left {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo.on .right {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo .left > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo .right > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo ul {
+    display: flex;
+    width: clamp(250px, 8vw, 300px);
+    gap: 5px;
+  }
+  .logo ul li {
+    background-color: #ddd;
+  }
+  .logo ul li img {
+    width: 100%;
+  }
+  .logo h4 {
+    font-size: 2rem;
+    margin: 40px 0px 20px;
+  }
+  .logo p {
+    font-size: 1.2rem;
+  }
+
+  .swiper-slide {
+    width: 90%;
+    height: 90vh;
+    font-family: "AliceDigitalLearning";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(25px, 1vw, 40px);
+    position: relative;
+    padding-top: 30px;
+  }
+  .swiper-slide h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .swiper-slide h4 {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    text-align: center;
+    padding-top: clamp(70px, 6vw, 120px);
+  }
+  .swiper-slide .over {
+    display: flex;
+    gap: clamp(20px, 1vw, 45px);
+    align-items: end;
+  }
+  .swiper-slide .tab {
+    width: clamp(200px, 17vw, 300px);
+  }
+  .swiper-slide .mockup_pc {
+    width: clamp(300px, 25vw, 400px);
+    position: relative;
+  }
+  .mockup_pc p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    font-weight: bold;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .pcImg {
+    width: 94%;
+    height: clamp(155px, 13vw, 240px);
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .pcImg img {
+    width: 100%;
+    display: block;
+  }
+  .swiper-slide .content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    /* margin-top: -30px; */
+  }
+  .swiper-slide .content ul li {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide .content ul li p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+  }
+  .swiper-slide .content ul li p span {
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+  }
+
+  .swiper-slide .content ul li .tool {
+    display: flex;
+    width: 200px;
+    gap: 10px;
+  }
+  .swiper-slide .content ul li .tool li {
+    display: flex;
+    width: calc((100% - 50px) / 6);
+  }
+  .site {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+  }
+  .site ul li a {
+    display: block;
+    width: 100%;
+  }
+  .site ul li {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 20px 0px;
+  }
+
+  .site ul li:hover {
+    background-color: aliceblue;
+    outline: 3px solid #000;
+    transition: 0.3s;
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination-bullets {
+    --swiper-theme-color: rebeccapurple;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: rebeccapurple;
+    background-color: #fff;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 3rem;
+  }
+  .swiper-button-prev {
+    margin-left: clamp(70px, 10vw, 160px);
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  }
+  .swiper-button-next {
+    margin-right: clamp(130px, 10vw, 160px);
+    padding-right: 0.5rem;
+    padding-left: 1rem;
+  }
+  .app_wrap {
+    width: 800px;
+  }
+  /* 
+.illust h3 {
+  padding-top: 70px;
+}
+.illust ul li > img {
+  width: 100%;
+  display: block;
+}
+.illust ul {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.illust ul li {
+  position: relative;
+  width: calc(100% / 3);
+}
+.illust ul li div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 20px;
+  position: absolute;
+  top: 50px;
+}
+.illust div img {
+  width: calc((100% - 20px) / 3);
+  display: block;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.illust div img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+} */
+
+  .contact {
+    font-family: "AliceDigitalLearning";
+    color: #604c77;
+    text-shadow:
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+    text-align: left;
+    text-align: left;
+  }
+  .contact,
+  .contact * {
+    user-select: text;
+  }
+  .contact .over {
+    padding: clamp(50px, 3vw, 70px);
+    font-size: clamp(3rem, 3vw, 4.5rem);
+    /* padding-bottom: 0px; */
+  }
+  .contact .under {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-left: clamp(45px, 2vw, 50px);
+    padding-right: clamp(140px, 7vw, 170px);
+  }
+  .contact .left {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+  }
+  .contact .left h2 {
+    font-size: 4.5rem;
+  }
+  .contact .left h2 span {
+    font-size: 2.2rem;
+  }
+  .contact .under .right {
+    display: flex;
+  }
+  .contact .under .right div {
+    width: 3px;
+    height: 170px;
+    background-color: #604c77;
+  }
+  .contact .under .right ul {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .home h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: lighter;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+    padding-top: clamp(1rem, 5vw, 2rem);
+    padding-bottom: clamp(0.5rem, 4vw, 1rem);
+  }
+  .home h2 {
+    font-family: "AliceDigitalLearning";
+    color: #fff;
+    text-shadow:
+      -2px -2px 0 #604c77,
+      2px -2px 0 #604c77,
+      -2px 2px 0 #604c77,
+      2px 2px 0 #604c77;
+    font-size: clamp(2.2rem, 2vw, 4rem);
+    padding-left: clamp(20px, 2vw, 30px);
+    padding-right: clamp(20px, 2vw, 30px);
+    /* padding-bottom: 1rem; */
+  }
+  .home p {
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(0.5rem, 5vw, 1rem);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
+  }
+  .home .page {
+    color: #a0302e;
+    width: 500px;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+  }
+
+  .cake {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+  .cake:hover {
+    transform: translateX(-50%) scale(1.025);
+    transition: ease-in-out 0.3s;
+  }
+
+  h3 {
+    font-family: "Pacifico", cursive;
+    /* font-size: clamp(3rem, 4vw, 5rem); */
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+  }
+  .profile .over {
+    display: flex;
+    /* gap: 400px; */
+    gap: clamp(50px, 10vw, 400px);
+    /* padding: 70px 100px 30px; */
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(50px, 3vw, 70px);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(90px, 4vw, 100px);
+    align-items: center;
+  }
+  .profile .over p {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.1rem, 1vw, 2.5rem);
+    text-align: left;
+    padding-top: clamp(2rem, 3vw, 3rem);
+  }
+  .profile .under {
+    display: flex;
+    /* padding: 0px 150px; */
+    padding-top: clamp(1.2rem, 2vw, 3rem);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(140px, 7vw, 170px);
+    /* gap: 100px; */
+    gap: clamp(50px, 5vw, 80px);
+  }
+  .profile .under .left {
+    width: 30%;
+  }
+  .profile .under .left img {
+    width: 100%;
+  }
+  .profile .under .left p {
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.3vw, 2.7rem);
+    font-family: "AliceDigitalLearning";
+    padding: 5px;
+  }
+  .profile .under .right {
+    display: flex;
+    gap: clamp(30px, 3vw, 50px);
+  }
+  .profile .under .right .content {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.2rem, 1vw, 2.7rem);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+  }
+  .profile .under .right span {
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+    font-weight: lighter;
+  }
+  .profile .under .right p {
+    font-size: clamp(0.9rem, 1.1vw, 1.7rem);
+    font-weight: lighter;
+  }
+  .profile .tool {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+  }
+  .profile .tool li {
+    /* width: calc((100% - 180px) / 10); */
+    flex: 0 0 20px;
+  }
+  .profile .tool img {
+    width: 100%;
+    display: block;
+  }
+
+  .logo h3 {
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(20px, 1vw, 30px);
+  }
+  .logo > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(2rem, 3vw, 3rem);
+    padding-right: clamp(120px, 6vw, 150px);
+  }
+  .logo .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .logo .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+  }
+  .logo.on .left {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo.on .right {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo .left > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo .right > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo ul {
+    display: flex;
+    width: clamp(250px, 8vw, 300px);
+    gap: 5px;
+  }
+  .logo ul li {
+    background-color: #ddd;
+  }
+  .logo ul li img {
+    width: 100%;
+  }
+  .logo h4 {
+    font-size: 1.8rem;
+    margin: 40px 0px 20px;
+  }
+  .logo p {
+    font-size: 1.1rem;
+  }
+
+  .swiper-slide {
+    width: 90%;
+    height: 90vh;
+    font-family: "AliceDigitalLearning";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(25px, 1vw, 40px);
+    position: relative;
+    padding-top: 30px;
+  }
+  .swiper-slide h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .swiper-slide h4 {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    text-align: center;
+    padding-top: clamp(70px, 6vw, 120px);
+  }
+  .swiper-slide .over {
+    display: flex;
+    gap: clamp(20px, 1vw, 45px);
+    align-items: end;
+  }
+  .swiper-slide .tab {
+    width: clamp(180px, 15vw, 300px);
+  }
+  .swiper-slide .mockup_pc {
+    width: clamp(250px, 22vw, 400px);
+    position: relative;
+  }
+  .mockup_pc p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    font-weight: bold;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .pcImg {
+    width: 94%;
+    height: clamp(130px, 12vw, 240px);
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .pcImg img {
+    width: 100%;
+    display: block;
+  }
+  .swiper-slide .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* margin-top: -30px; */
+  }
+  .swiper-slide .content > ul {
+    width: 60%;
+  }
+  .swiper-slide .content ul li {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide .content ul li p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    text-align: left;
+  }
+  .swiper-slide .content ul li p span {
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+  }
+
+  .swiper-slide .content ul li .tool {
+    display: flex;
+    width: 200px;
+    gap: 10px;
+  }
+  .swiper-slide .content ul li .tool li {
+    display: flex;
+    width: calc((100% - 50px) / 6);
+  }
+  div.book_mockup {
+    justify-content: center;
+    align-items: center;
+  }
+  .site {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+  }
+  .site ul li a {
+    display: block;
+    width: 100%;
+  }
+  .site ul li {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 20px 0px;
+  }
+
+  .site ul li:hover {
+    background-color: aliceblue;
+    outline: 3px solid #000;
+    transition: 0.3s;
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination-bullets {
+    --swiper-theme-color: rebeccapurple;
+    width: 20px;
+  }
+  /* .swiper-button-next,
+  .swiper-button-prev {
+    color: rebeccapurple;
+    background-color: #fff;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 3rem;
+    width: 30px;
+    height: 30px;
+    transform: translateY(45vh);
+  }
+  .swiper-button-prev {
+    padding-left: 0.7rem;
+    padding-right: 0.9rem;
+  }
+  .swiper-button-next {
+    padding-right: 0.7rem;
+    padding-left: 0.9rem;
+  } */
+  .app_wrap {
+    width: 500px;
+  }
+  /* 
+.illust h3 {
+  padding-top: 70px;
+}
+.illust ul li > img {
+  width: 100%;
+  display: block;
+}
+.illust ul {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.illust ul li {
+  position: relative;
+  width: calc(100% / 3);
+}
+.illust ul li div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 20px;
+  position: absolute;
+  top: 50px;
+}
+.illust div img {
+  width: calc((100% - 20px) / 3);
+  display: block;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.illust div img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+} */
+
+  .contact {
+    font-family: "AliceDigitalLearning";
+    color: #604c77;
+    text-shadow:
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+    text-align: left;
+  }
+  .contact,
+  .contact * {
+    user-select: text;
+  }
+  .contact .over {
+    padding: clamp(50px, 3vw, 70px);
+    font-size: clamp(2rem, 3vw, 4.5rem);
+  }
+  .contact .under {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-left: clamp(45px, 2vw, 50px);
+    padding-right: clamp(140px, 7vw, 170px);
+  }
+  .contact .left h2 {
+    font-size: 5rem;
+  }
+  .contact .left h2 span {
+    font-size: 2.5rem;
+  }
+  .contact .under .right {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: clamp(2rem, 1vw, 3rem);
+  }
+  .contact .under .right div {
+    width: 3px;
+    height: 170px;
+    background-color: #604c77;
+  }
+  .contact .under .right ul {
+    font-size: clamp(1.7rem, 1.7vw, 2.5rem);
+    padding: 20px;
+  }
+}
+
+/* ========================== */
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: lighter;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+    padding-top: clamp(1rem, 5vw, 2rem);
+    padding-bottom: clamp(0.5rem, 4vw, 1rem);
+  }
+  .home h2 {
+    font-family: "AliceDigitalLearning";
+    color: #fff;
+    text-shadow:
+      -2px -2px 0 #604c77,
+      2px -2px 0 #604c77,
+      -2px 2px 0 #604c77,
+      2px 2px 0 #604c77;
+    font-size: clamp(2.2rem, 2vw, 4rem);
+    padding-left: clamp(20px, 2vw, 30px);
+    padding-right: clamp(20px, 2vw, 30px);
+    /* padding-bottom: 1rem; */
+  }
+  .home p {
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(0.5rem, 5vw, 1rem);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
+  }
+  .home .page {
+    color: #a0302e;
+    width: 300px;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+
+  .cake {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+  .cake:hover {
+    transform: translateX(-50%) scale(1.025);
+    transition: ease-in-out 0.3s;
+  }
+
+  h3 {
+    font-family: "Pacifico", cursive;
+    /* font-size: clamp(3rem, 4vw, 5rem); */
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+  }
+  .profile .over {
+    display: flex;
+    /* gap: 400px; */
+    gap: clamp(50px, 10vw, 400px);
+    /* padding: 70px 100px 30px; */
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(50px, 3vw, 70px);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(90px, 4vw, 100px);
+    align-items: center;
+  }
+  .profile .over p {
+    display: none;
+  }
+  .profile .under {
+    display: flex;
+    /* padding: 0px 150px; */
+    padding-top: clamp(1.2rem, 2vw, 3rem);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(140px, 7vw, 170px);
+    /* gap: 100px; */
+    gap: clamp(50px, 5vw, 80px);
+  }
+  .profile .under .left {
+    width: 30%;
+    display: none;
+  }
+  .profile .under .left img {
+    width: 100%;
+  }
+  .profile .under .left p {
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.3vw, 2.7rem);
+    font-family: "AliceDigitalLearning";
+    padding: 5px;
+  }
+  .profile .under .right {
+    display: flex;
+    gap: clamp(30px, 3vw, 50px);
+  }
+  .profile .under .right .content {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.2rem, 1vw, 2.7rem);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+  }
+  .profile .under .right span {
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+    font-weight: lighter;
+  }
+  .profile .under .right p {
+    font-size: clamp(0.9rem, 1.1vw, 1.7rem);
+    font-weight: lighter;
+  }
+  .profile .tool {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100px;
+    max-width: 800px;
+  }
+  .profile .tool li {
+    /* width: calc((100% - 180px) / 10); */
+    flex: 0 0 20px;
+  }
+  .profile .tool img {
+    width: 100%;
+    display: block;
+  }
+
+  .logo h3 {
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(20px, 1vw, 30px);
+  }
+  .logo > div {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-evenly; */
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(2rem, 3vw, 3rem);
+    padding-right: clamp(120px, 6vw, 150px);
+  }
+  .logo .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .logo .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+  }
+  .logo.on .left {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo.on .right {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo .left > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo .right > img {
+    width: clamp(200px, 8vw, 250px);
+  }
+  .logo ul {
+    display: none;
+    width: clamp(250px, 8vw, 300px);
+    gap: 5px;
+  }
+  .logo ul li {
+    background-color: #ddd;
+  }
+  .logo ul li img {
+    width: 100%;
+  }
+  .logo h4 {
+    font-size: 1.8rem;
+    margin: 40px 0px 20px;
+  }
+  .logo p {
+    font-size: 1.1rem;
+    display: none;
+  }
+
+  .swiper-slide {
+    width: 90%;
+    height: 90vh;
+    font-family: "AliceDigitalLearning";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(25px, 1vw, 40px);
+    position: relative;
+    padding-top: 30px;
+  }
+  .swiper-slide h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .swiper-slide h4 {
+    font-size: clamp(1.7rem, 2vw, 2.5rem);
+    text-align: center;
+    padding-top: clamp(70px, 6vw, 120px);
+  }
+  .swiper-slide .over {
+    display: flex;
+    gap: clamp(20px, 1vw, 45px);
+    align-items: end;
+  }
+  .swiper-slide .tab {
+    display: none;
+    width: clamp(180px, 15vw, 300px);
+  }
+  .swiper-slide .mockup_pc {
+    width: clamp(250px, 22vw, 400px);
+    position: relative;
+  }
+  .mockup_pc p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    font-weight: bold;
+  }
+  .hotel_main {
+    display: none;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .pcImg {
+    width: 94%;
+    height: clamp(130px, 12vw, 240px);
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .pcImg img {
+    width: 100%;
+    display: block;
+  }
+  .swiper-slide .content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* margin-top: -30px; */
+  }
+  .swiper-slide .content > ul {
+    width: 60%;
+  }
+  .swiper-slide .content ul li {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide .content ul li p {
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
+    text-align: left;
+  }
+  .swiper-slide .content ul li p span {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+  }
+
+  .swiper-slide .content ul li .tool {
+    display: flex;
+    width: 200px;
+    gap: 10px;
+  }
+  .swiper-slide .content ul li .tool li {
+    display: flex;
+    width: calc((100% - 50px) / 6);
+  }
+  div.book_mockup {
+    justify-content: center;
+    align-items: center;
+  }
+  .site {
+    font-size: clamp(1rem, 1.3vw, 2rem);
+  }
+  .site ul li a {
+    display: block;
+    width: 100%;
+  }
+  .site ul li {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 20px 0px;
+  }
+
+  .site ul li:hover {
+    background-color: aliceblue;
+    outline: 3px solid #000;
+    transition: 0.3s;
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination-bullets {
+    --swiper-theme-color: rebeccapurple;
+    width: 20px;
+  }
+  .app_wrap {
+    width: 300px;
+  }
+  div.video {
+    width: 300px;
+  }
+  .contact {
+    font-family: "AliceDigitalLearning";
+    color: #604c77;
+    text-shadow:
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+    text-align: left;
+  }
+  .contact,
+  .contact * {
+    user-select: text;
+  }
+  .contact .over {
+    padding: clamp(50px, 3vw, 70px);
+    font-size: clamp(2rem, 3vw, 4.5rem);
+  }
+  .contact .under {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-left: clamp(45px, 2vw, 50px);
+    padding-right: clamp(140px, 7vw, 170px);
+  }
+  .contact .left h2 {
+    font-size: 4rem;
+  }
+  .contact .left h2 span {
+    font-size: 2rem;
+  }
+  .contact .under .right {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: clamp(2rem, 1vw, 3rem);
+  }
+  .contact .under .right div {
+    display: none;
+    width: 3px;
+    height: 170px;
+    background-color: #604c77;
+  }
+  .contact .under .right ul {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    padding: 20px;
+  }
+  .contact .under .right .url li a {
+    word-break: break-all;
+  }
+}
+
+/* ========================== */
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: lighter;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+    padding-top: clamp(1rem, 5vw, 2rem);
+    padding-bottom: clamp(0.5rem, 4vw, 1rem);
+  }
+  .home h2 {
+    font-family: "AliceDigitalLearning";
+    color: #fff;
+    text-shadow:
+      -2px -2px 0 #604c77,
+      2px -2px 0 #604c77,
+      -2px 2px 0 #604c77,
+      2px 2px 0 #604c77;
+    font-size: clamp(2.2rem, 2vw, 4rem);
+    padding-left: clamp(20px, 2vw, 30px);
+    padding-right: clamp(20px, 2vw, 30px);
+    /* padding-bottom: 1rem; */
+  }
+  .home p {
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(0.5rem, 5vw, 1rem);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 1vw, 2.5rem);
+  }
+  .home .page {
+    color: #a0302e;
+    width: 200px;
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+
+  .cake {
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+  }
+  .cake:hover {
+    transform: translateX(-50%) scale(1.025);
+    transition: ease-in-out 0.3s;
+  }
+
+  h3 {
+    font-family: "Pacifico", cursive;
+    /* font-size: clamp(3rem, 4vw, 5rem); */
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    color: #a0302e;
+    text-shadow:
+      -3px -3px 0 #fff,
+      3px -3px 0 #fff,
+      -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+  }
+  .profile .over {
+    display: flex;
+    /* gap: 400px; */
+    gap: clamp(50px, 10vw, 400px);
+    /* padding: 70px 100px 30px; */
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(50px, 3vw, 70px);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(90px, 4vw, 100px);
+    align-items: center;
+  }
+  .profile .over p {
+    display: none;
+  }
+  .profile .under {
+    display: flex;
+    /* padding: 0px 150px; */
+    padding-top: clamp(1.2rem, 2vw, 3rem);
+    padding-left: clamp(90px, 4vw, 100px);
+    padding-right: clamp(140px, 7vw, 170px);
+    /* gap: 100px; */
+    gap: clamp(50px, 5vw, 80px);
+  }
+  .profile .under .left {
+    width: 30%;
+    display: none;
+  }
+  .profile .under .left img {
+    width: 100%;
+  }
+  .profile .under .left p {
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.3vw, 2.7rem);
+    font-family: "AliceDigitalLearning";
+    padding: 5px;
+  }
+  .profile .under .right {
+    display: flex;
+    gap: clamp(30px, 3vw, 50px);
+  }
+  .profile .under .right .content {
+    font-family: "AliceDigitalLearning";
+    font-size: clamp(1.2rem, 1vw, 2.7rem);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+  }
+  .profile .under .right ul.con {
+    display: none;
+  }
+  .profile .under .right span {
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+    font-weight: lighter;
+  }
+  .profile .under .right p {
+    font-size: clamp(0.9rem, 1.1vw, 1.7rem);
+    font-weight: lighter;
+  }
+  .profile .tool {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100px;
+    max-width: 800px;
+  }
+  .profile .tool li {
+    /* width: calc((100% - 180px) / 10); */
+    flex: 0 0 20px;
+  }
+  .profile .tool img {
+    width: 100%;
+    display: block;
+  }
+
+  .logo h3 {
+    padding-top: clamp(50px, 3vw, 70px);
+    padding-bottom: clamp(20px, 1vw, 30px);
+  }
+  .logo > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "AliceDigitalLearning";
+    padding-top: clamp(2rem, 3vw, 3rem);
+    padding-right: clamp(120px, 6vw, 150px);
+  }
+  .logo .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .logo .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+  }
+  .logo.on .left {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo.on .right {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .logo .left > img {
+    width: clamp(150px, 8vw, 200px);
+  }
+  .logo .right > img {
+    width: clamp(150px, 8vw, 200px);
+  }
+  .logo ul {
+    display: none;
+    width: clamp(250px, 8vw, 300px);
+    gap: 5px;
+  }
+  .logo ul li {
+    background-color: #ddd;
+  }
+  .logo ul li img {
+    width: 100%;
+  }
+  .logo h4 {
+    font-size: 1.8rem;
+    margin: 40px 0px 20px;
+  }
+  .logo p {
+    font-size: 0.8rem;
+    display: none;
+  }
+
+  .swiper-slide {
+    width: 90%;
+    height: 90vh;
+    font-family: "AliceDigitalLearning";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(25px, 1vw, 40px);
+    position: relative;
+    padding-top: 30px;
+  }
+  .swiper-slide h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .swiper-slide h4 {
+    font-size: clamp(1.3rem, 2vw, 2.5rem);
+    text-align: center;
+    padding-top: clamp(70px, 6vw, 120px);
+  }
+  .swiper-slide .over {
+    display: flex;
+    gap: clamp(20px, 1vw, 45px);
+    align-items: end;
+  }
+  .swiper-slide .tab {
+    display: none;
+    width: clamp(180px, 15vw, 300px);
+  }
+  .swiper-slide .mockup_pc {
+    width: clamp(250px, 22vw, 400px);
+    position: relative;
+  }
+  .mockup_pc p {
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+    font-weight: bold;
+  }
+  .hotel_main {
+    display: none;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .pcImg {
+    width: 94%;
+    height: clamp(130px, 12vw, 240px);
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .pcImg img {
+    width: 100%;
+    display: block;
+  }
+  .swiper-slide .content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* margin-top: -30px; */
+  }
+  .swiper-slide .content > ul {
+    width: 60%;
+  }
+  .swiper-slide .content ul li {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-slide .content ul li p {
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
+    text-align: left;
+  }
+  .swiper-slide .content ul li p span {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+  }
+
+  .swiper-slide .content ul li .tool {
+    display: flex;
+    width: 200px;
+    gap: 10px;
+  }
+  .swiper-slide .content ul li .tool li {
+    display: flex;
+    width: calc((100% - 50px) / 6);
+  }
+  div.book_mockup {
+    justify-content: center;
+    align-items: center;
+  }
+  .site {
+    font-size: clamp(1rem, 1.3vw, 2rem);
+  }
+  .site ul li a {
+    display: block;
+    width: 100%;
+  }
+  .site ul li {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 20px 0px;
+  }
+
+  .site ul li:hover {
+    background-color: aliceblue;
+    outline: 3px solid #000;
+    transition: 0.3s;
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination-bullets {
+    --swiper-theme-color: rebeccapurple;
+    width: 20px;
+  }
+  .app_wrap {
+    width: 300px;
+  }
+  div.video {
+    width: 300px;
+  }
+  .contact {
+    font-family: "AliceDigitalLearning";
+    color: #604c77;
+    text-shadow:
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      2px 2px 0 #fff;
+    text-align: left;
+  }
+  .contact,
+  .contact * {
+    user-select: text;
+  }
+  .contact .over {
+    padding: clamp(50px, 3vw, 70px);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+  }
+  .contact .under {
+    /* display: flex; */
+    justify-content: space-between;
+    /* padding-left: clamp(45px, 2vw, 50px); */
+    /* padding-right: clamp(140px, 7vw, 170px); */
+  }
+  .contact .left h2 {
+    font-size: 2.5rem;
+  }
+  .contact .left h2 span {
+    font-size: 1rem;
+  }
+  .contact .under .right {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding-top: clamp(2rem, 1vw, 3rem); */
+  }
+  .contact .under .right div {
+    display: none;
+    width: 3px;
+    height: 170px;
+    background-color: #604c77;
+  }
+  .contact .under .right ul {
+    font-size: clamp(1rem, 3vw, 4rem);
+    padding: 0px;
+  }
+}
